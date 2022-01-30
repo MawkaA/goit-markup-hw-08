@@ -1,0 +1,78 @@
+@mixin font($fz, $lh, $fw, $ls) {
+   font-size: $fz;
+   line-height: $lh;
+   font-weight: $fw;
+   letter-spacing: $ls; 
+} 
+
+.clients {
+    background-color: var(--primary-white-color);
+    height: auto;
+    margin: 0 auto;
+}
+
+.clients__container {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.clients__title {
+    @include font(36px, 1.16, 700, 0.03em );
+    font-family: 'Roboto',sans-serif;
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    & .clients__list__item {
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    };
+    
+    & .clients__list__item :not(:last-of-type) {
+    margin-right: 30px;
+    };
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:none;
+    border:1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:focus,
+    &:active;
+    &:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    };
+
+    &:hover .client__icon,
+    &:focus  .client__icon {
+    fill: var(--accent-color);
+    };
+}
+
+.client__icon {
+    object-fit: contain;
+    object-position: center;
+    fill: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}

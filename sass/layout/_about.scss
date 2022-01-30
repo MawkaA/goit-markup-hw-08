@@ -1,0 +1,63 @@
+@mixin font($fz, $lh, $fw, $ls) {
+   font-size: $fz;
+   line-height: $lh;
+   font-weight: $fw;
+   letter-spacing: $ls; 
+}
+
+.about {
+    background-color: var(--primary-white-color);
+    height: auto;
+    margin: 0 auto;
+}
+
+.about__container {
+    display: flex;
+    align-items: stretch;
+}
+
+.about__list {
+    margin:0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    & .about__list__item {
+    width: 270px;
+    height: auto;
+    };  
+    & .about__list__item:not(:last-of-type) {
+    margin-right: 30px;
+    };
+}
+
+.about__list__container {
+    margin-bottom: 30px;
+    width:270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.about__list__icon {
+    object-position: center;
+    object-fit: contain;
+    position: 50% 50%;
+}
+
+
+.about__list__title {
+    @include font(14px, 1.14, 700, 0.03em );
+    color: inherit;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.about__list__subtitle {
+    @include font(14px, 1.7, 400, 0.03em );
+    color: var(--secondary-text-color);
+} 

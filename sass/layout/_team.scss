@@ -1,0 +1,104 @@
+.team {
+    background-color: var(--tertiary-bgcolor);
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.team__container {
+    margin: 0 auto;
+    
+}
+
+.team__title{
+    @include font(36px, 1.16, 700, 0.03em );
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team__list {
+    margin: 0 auto;
+    padding: 0;
+
+    & .team__list__item{
+    padding: 0;
+    background-color: var(--primary-white-color);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: block;
+    max-width:270px
+    };
+
+    & .team__list__item:not(:last-of-type){
+    margin-right:30px;
+    };
+}
+
+.team__list__item__container {
+    display: block;
+    padding:30px ;
+    text-align: center;
+}
+
+.team__list__title {
+    @include font(16px, 1.18, 500, 0.03em );
+    font-style: medium;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.team__list__subtitle {
+    @include font(16px, 1.18, 400, 0.03em );
+    color: var(--secondary-text-color);
+}
+
+.team__list__sublist {
+    display: flex;
+    margin-top:16px ;
+    padding: 0;
+
+    & .team__sublist__item:not(:last-child){
+    margin-right: 10px; 
+    };
+    
+    & .team__sublist__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    };
+}
+
+.team__sublist__link { 
+    margin:0 auto;
+    padding: 0;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+    background-color: var(--accent-color);
+        & .team__sublist__icon {
+            fill: var(--primary-white-color); 
+        }
+    }
+}
+
+.team__sublist__icon {
+    fill: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,22 @@
+@mixin font($fz, $lh, $fw, $ls) {
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+    letter-spacing: $ls; 
+}
+
+.logo {
+    color: var(--accent-color);
+    @include font(26px, 1.19, 700, 0.03em);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+.logo_header {
+    color: var(--primary-text-color);
+}
+
+.logo_footer { 
+    color: var(--primary-white-color);
+}
