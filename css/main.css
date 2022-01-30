@@ -1,3 +1,32 @@
+:root {
+  --primary-text-color:#212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196F3;
+  --primary-white-color: #FFFFFF;
+  --primary-bgcolor:#2F303A;
+  --secondary-bgcolor: #E5E5E5;
+  --tertiary-bgcolor: #F5F4FA;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -828,20 +857,12 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-list__item:hover,
-.site-list__item:focus,
-.site-list__item.active {
+.site-list__item:hover, .site-list__item:focus, .site-list__item.active {
   color: var(--accent-color);
 }
 
-.site-list__item:hover svg {
-  fill: var(--accent-color);
-}
-
-.site-list__item:focus svg {
-  fill: var(--accent-color);
-}
-
+.site-list__item:hover svg,
+.site-list__item:focus svg,
 .site-list__item:active svg {
   fill: var(--accent-color);
 }
@@ -879,12 +900,7 @@ ul {
   margin-left: 50px;
   display: flex;
   align-items: center;
-}
-
-.connect__contact {
   color: var(--secondary-text-color);
-  display: flex;
-  align-items: center;
 }
 
 .connect__icon_email {
@@ -920,11 +936,11 @@ ul {
   margin-right: 93px;
 }
 
-.logo2 {
+.logo_header {
   color: var(--primary-text-color);
 }
 
-.logo3 {
+.logo_footer {
   color: var(--primary-white-color);
 }
 
@@ -1146,9 +1162,6 @@ ul {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-}
-
-.team__list__item {
   display: block;
   max-width: 270px;
 }
@@ -1212,22 +1225,18 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__sublist__link:hover,
-.team__sublist__link:focus,
-.team__sublist__link:active {
+.team__sublist__link:hover, .team__sublist__link:focus, .team__sublist__link:active {
   background-color: var(--accent-color);
+}
+
+.team__sublist__link:hover .team__sublist__icon, .team__sublist__link:focus .team__sublist__icon, .team__sublist__link:active .team__sublist__icon {
+  fill: var(--primary-white-color);
 }
 
 .team__sublist__icon {
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__sublist__link:hover .team__sublist__icon,
-.team__sublist__link:focus .team__sublist__icon,
-.team__sublist__link:active .team__sublist__icon {
-  fill: var(--primary-white-color);
 }
 
 .clients {
@@ -1285,17 +1294,12 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:focus,
-.clients__link:active,
-.clients__link:hover {
+.clients__link:focus, .clients__link:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.clients__link:hover .client__icon {
-  fill: var(--accent-color);
-}
-
+.clients__link:hover .client__icon,
 .clients__link:focus .client__icon {
   fill: var(--accent-color);
 }
@@ -1358,9 +1362,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__list__link:hover,
-.address__list__link:focus,
-.address__list__link:active {
+.address__list__link:hover, .address__list__link:focus, .address__list__link:active {
   color: var(--accent-color);
 }
 
@@ -1417,9 +1419,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list__link:hover,
-.footer-list__link:focus,
-.footer-list__link:active {
+.footer-list__link:hover, .footer-list__link:focus, .footer-list__link:active {
   background-color: var(--accent-color);
 }
 
@@ -1478,7 +1478,7 @@ ul {
   color: var(--primary-white-color);
 }
 
-.footer__input::placeholder {
+.footer__form__label .footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
@@ -1648,34 +1648,5 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-}
-
-:root {
-  --primary-text-color:#212121;
-  --secondary-text-color: #757575;
-  --accent-color: #2196F3;
-  --primary-white-color: #FFFFFF;
-  --primary-bgcolor:#2F303A;
-  --secondary-bgcolor: #E5E5E5;
-  --tertiary-bgcolor: #F5F4FA;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

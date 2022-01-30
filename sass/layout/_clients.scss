@@ -55,16 +55,15 @@
     height: 92px;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    
+}
+.clients__link {
     &:focus,
-    &:active;
     &:hover {
     border-color: var(--accent-color);
     fill: var(--accent-color);
     };
-
     &:hover .client__icon,
-    &:focus  .client__icon {
+    &:focus .client__icon {
     fill: var(--accent-color);
     };
 }
