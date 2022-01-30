@@ -61,11 +61,11 @@
     &:hover {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-    };
+    }
     &:hover .client__icon,
     &:focus .client__icon {
     fill: var(--accent-color);
-    };
+    }
 }
 
 .client__icon {
