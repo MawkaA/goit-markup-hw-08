@@ -6,6 +6,9 @@
     padding-top:0;
 }
 
+@media screen and (min-width:480px) and (max-width:1200px) {
+    .trades {display: none;}
+}
 .trades__container {
     margin: 0 auto;
 }
