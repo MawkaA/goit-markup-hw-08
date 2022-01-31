@@ -38,24 +38,41 @@
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg><span>+38 096 111 11 11</span></a></li>
             </ul>
-            <div class="mobile-open_container">
-                <button class="mobile-open">x</button>
-            </div>
-            <div class="mobil is-hidden">
-                <button class="mobile-close">x</button>
-                <nav class="mob-nav">
-                    <ul class="mob-list">
-                        <li><a class="mob-list__item active" href="./index.html">Студия</a></li>
-                        <li><a class="mob-list__item " href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="mob-list__item" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="mob-contact">
-                        <li class="mob-contact__item"><a class=" mob-contact__link " href="mailto:info@devstudio.com">
-                            info@devstudio.com</a></li>
-                        <li class="mob-contact__item"><a class="mob-contact__link " href="tel:+380961111111">
+    
+            <button class="mobile-open" mobile-open>
+                <svg class="mobile-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile is-hidden" mobile>
+                    <button class="mobile-close" mobile-close>
+                        <svg class="mobile-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-item"> 
+                        <nav class="mob-nav">
+                        <ul class="mob-list_nav">
+                            <li><a class="mob-list__item active" href="./index.html">Студия</a></li>
+                            <li><a class="mob-list__item " href="./portfolio.html">Портфолио</a></li>
+                            <li><a class="mob-list__item" href="">Контакты</a></li>
+                        </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-item">
+                        <ul class="mob-contact">
+                            <li class="mob-contact__item mob__item_phone"><a class=" mob-contact__link " href="mailto:info@devstudio.com">
                             +38 096 111 11 11</a></li>
-                </ul>
+                            <li class="mob-contact__item mob__item_email"><a class="mob-contact__link " href="tel:+380961111111">
+                            info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="mob-contact_social">
+                            <li class="mob-contact__item_social"><a class="mob-link_social" href="#">Instagram</a></li>
+                            <li class="mob-contact__item_social"><a class="mob-link_social" href="#">Twitter</a></li>
+                            <li class="mob-contact__item_social"><a class="mob-link_social" href="#">Facebook</a></li>
+                            <li class="mob-contact__item_social"><a class="mob-link_social" href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </header>  
