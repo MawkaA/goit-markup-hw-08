@@ -1021,6 +1021,15 @@ ul {
     align-items: center;
     align-content: center;
   }
+  .logo {
+    color: var(--accent-color);
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+  }
   .connect {
     display: none;
   }
@@ -1184,7 +1193,116 @@ ul {
     border-bottom: 1px solid #ECECEC;
     height: auto;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 0 auto;
+  }
+  .logo {
+    color: var(--accent-color);
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 0;
+  }
+  .mobile-open {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+  .header__container {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+  .site-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 88px;
+    margin-right: 84px;
+    padding: 0;
+  }
+  .site-list .site-list__item:not(:last-of-type) {
+    margin-right: 50px;
+  }
+  .connect {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .connect .connect__contact {
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #757575;
+    font-family: 'Roboto',sans-serif;
+  }
+  .site-list__item {
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-list__item:hover, .site-list__item:focus {
+    color: var(--accent-color);
+  }
+  .site-list__item:hover svg,
+  .site-list__item:focus svg,
+  .site-list__item:active svg {
+    fill: var(--accent-color);
+  }
+  .site-list__item.active {
+    position: relative;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-list__item.active::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    background: var(--accent-color);
+    left: -1px;
+    bottom: -28px;
+    border-radius: 2px;
+  }
+  .connect__icon_email {
+    display: inline-block;
+    object-fit: contain;
+    margin-right: 10px;
+    cursor: pointer;
+    fill: #757575;
+    max-height: 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .connect__icon_phone {
+    display: inline-block;
+    object-fit: contain;
+    margin-right: 10px;
+    cursor: pointer;
+    max-height: 16px;
+    fill: #757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1195,6 +1313,12 @@ ul {
     height: auto;
     margin: 0 auto;
     padding: 25px 0;
+  }
+  .mobile-open {
+    display: none;
+  }
+  .mobile {
+    display: none;
   }
   .header__container {
     margin: 0 auto;
@@ -1362,17 +1486,16 @@ ul {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.logo {
-  color: var(--accent-color);
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  margin-right: 93px;
+  .logo {
+    color: var(--accent-color);
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin-right: 93px;
+  }
 }
 
 .logo_header {
@@ -2689,7 +2812,6 @@ ul {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__list_btn {
-    padding-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
