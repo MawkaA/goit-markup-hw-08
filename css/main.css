@@ -1969,9 +1969,6 @@ ul {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .about {
-    width: 100%;
-  }
   .about__container {
     display: flex;
     flex-direction: column;
@@ -1982,13 +1979,11 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
   .about__list .about__list__item:not(:last-of-type) {
     margin-bottom: 30px;
   }
   .about__list .about__list__item {
-    min-width: 100%;
     height: auto;
   }
   .about__list__title {
@@ -2005,13 +2000,9 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about {
-    width: 100%;
-  }
   .about__container {
     margin: 0 auto;
     padding: 0;
-    width: 100%;
   }
   .about__list {
     width: 768px;
