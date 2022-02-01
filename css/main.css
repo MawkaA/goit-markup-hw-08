@@ -870,7 +870,7 @@ body {
   -webkit-text-size-adjust: 100%;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  margin: 30px 123px auto;
+  margin: 30px auto 0;
   border-radius: 4px;
   border: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -1310,7 +1310,10 @@ ul {
     margin: 0 auto;
     padding: 0;
   }
-  .mob-list__item:not(:last-of-type) {
+  .mob-list_nav li:not(:last-of-type) {
+    margin-bottom: 36px;
+  }
+  .mob-list_nav li:last-of-type {
     margin-bottom: 32px;
   }
   .mob-list__item {
@@ -1671,7 +1674,7 @@ ul {
     width: 100%;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1705,7 +1708,7 @@ ul {
     width: 480px;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1723,7 +1726,7 @@ ul {
     width: 480px;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1757,7 +1760,7 @@ ul {
     width: 480px;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1776,7 +1779,7 @@ ul {
     width: 768px;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1788,7 +1791,7 @@ ul {
     width: 768px;
     height: 400px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-tablet@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1828,10 +1831,10 @@ ul {
     padding: 200px 0;
   }
   .hero_background {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1840,10 +1843,10 @@ ul {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero_background {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bg-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2004,14 +2007,12 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about__container {
     margin: 0 auto;
-    padding: 0;
   }
   .about__list {
     width: 768px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
   .about__list .about__list__item:nth-child(odd) {
     margin-right: 30px;
@@ -2477,11 +2478,7 @@ ul {
     width: 210px;
     height: 92px;
     cursor: pointer;
-    margin: 0 auto;
     padding: 0;
-  }
-  .clients__list .clients__list__item :nth-child(odd) {
-    margin-right: 30px;
   }
   .clients__list .clients__list__item:nth-child(-n+4) {
     margin-bottom: 30px;
@@ -3072,7 +3069,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     padding: 0;
   }
   .footer__form {
@@ -3427,9 +3424,6 @@ ul {
     justify-content: center;
     margin-bottom: 50px;
   }
-  .portfolio__list_btn .portfolio__list__item:not(:last-of-type) {
-    margin-right: 8px;
-  }
   .portfolio__container {
     margin: 0 auto;
     width: 1200px;
@@ -3462,7 +3456,6 @@ ul {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -3496,7 +3489,6 @@ ul {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -3530,7 +3522,6 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: row;
     align-content: stretch;

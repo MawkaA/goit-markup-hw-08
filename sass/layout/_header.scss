@@ -283,9 +283,12 @@ text-decoration: none;
         list-style-type:none;
         margin:0 auto;
         padding: 0;
-    }
-    .mob-list__item:not(:last-of-type) {
+        & li:not(:last-of-type) {
+        margin-bottom: 36px 
+        }
+        & li:last-of-type {
         margin-bottom: 32px 
+        }
     }
     .mob-list__item {
         @include font(40px, 1.17, 500, 0.02em);  
@@ -295,6 +298,7 @@ text-decoration: none;
         transition-duration: 250ms;
         transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
+    
     &:hover,
     &:focus{
         color: var(--accent-color);

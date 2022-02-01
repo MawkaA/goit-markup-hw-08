@@ -72,9 +72,6 @@
 }
 @media  screen and (min-width:1200px)  {
     .portfolio__list_btn { 
-    & .portfolio__list__item:not(:last-of-type) {
-    margin-right: 8px;
-    };
     padding:0;
     display: flex;
     flex-direction: row;
@@ -120,7 +117,6 @@
 @media screen and (min-width:320px) and (max-width:479px){ 
     .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -153,7 +149,6 @@
 @media  screen and (min-width:480px) and (max-width:767px) {
     .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -186,7 +181,6 @@
 @media  screen and (min-width:768px) and (max-width:1199px) {
     .portfolio__grid {
     margin: 0 auto;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: row;
     align-content: stretch;

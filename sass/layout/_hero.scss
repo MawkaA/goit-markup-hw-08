@@ -174,7 +174,7 @@
     padding:200px 0;
     } 
     .hero_background {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -188,7 +188,7 @@
     (min-resolution: 192dpi),
     (min-resolution:2dppx) {
     .hero_background{ 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
