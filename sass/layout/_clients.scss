@@ -16,6 +16,48 @@
     display: block;
     text-align: center;
 }
+@media screen and (min-width:320px) and (max-width:479px){
+    .clients__title {
+    @include font(28px, 1.17, 700, 0.03em );
+    font-family: 'Roboto',sans-serif;
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    } 
+    .clients__list {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .clients__list  .clients__list__item {
+    width: 210px;
+    height: 92px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    }
+    .clients__list  .clients__list__item :nth-child(odd) {
+    margin-right: 30px;
+    }
+    .clients__list  .clients__list__item:nth-child(-n+4){
+    margin-bottom: 30px;
+    }
+    .clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:none;
+    border:1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 210px;
+    height: 92px;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
 
 @media screen and(min-width:480px) and(max-width:767px) {
     .clients__title {

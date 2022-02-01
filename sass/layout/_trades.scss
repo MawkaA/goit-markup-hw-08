@@ -5,8 +5,13 @@
     display: block;
     padding-top:0;
 }
+@media screen and (min-width:320px) and (max-width:479px){
+    .trades {
+        display: none;
+    }
+}
 
-@media screen and (min-width:480px) and (max-width:1200px) {
+@media screen and (min-width:480px) and (max-width:1199px) {
     .trades {display: none;}
 }
 .trades__container {
