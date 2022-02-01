@@ -1828,6 +1828,7 @@ ul {
     padding: 200px 0;
   }
   .hero_background {
+    width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-desktop.jpg");
@@ -1839,6 +1840,7 @@ ul {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero_background {
+    width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/bg-desktop@2x.jpg");
